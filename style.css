@@ -35,10 +35,30 @@ nav{
     padding:0.3rem;
 }
 
-.search-btn{
+.blue-btn{
     padding:0.3rem;
     background-color: green;
     border-radius: 5px;
     background-color: #365486;
     color: #DCF2F1;
+}
+
+.card{
+    background-color: gray;
+    width: 12%;
+    height: 30%;
+    min-height: 30vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-info, .book-cover{
+    height: 50%;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
