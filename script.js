@@ -1,4 +1,4 @@
-const search = () => {
+const search = async () => {
     event.preventDefault;
 
     //get the value inputed by the user
@@ -11,12 +11,22 @@ const search = () => {
         //define the API's URL
         myUrl = `https://www.googleapis.com/books/v1/volumes?q=${searchValue}`;
 
-        console.log(myUrl);
+        await getBookinformation(myUrl);
+        //printInformation(info)
+
     }else{
         alert("please inform the book title");
     }
 }
 
+const getBookinformation = async (url) => {
+    fetch(url)
+    .then(response => response.json())
+    .then(data => data.items.forEach(element => {
+        console.log(element.volumeInfo.title)
+    }))
+
+}
 const handleInputedString = (inputedString) => {
     return inputedString.replace(/\s+/g, '+');
 }
