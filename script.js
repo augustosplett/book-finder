@@ -39,7 +39,7 @@ const createCard = (title, url) => {
     card.className = "card mb-3"
     card.style = "max-width: 540px;"
     var element = `
-    <div class="card mb-3" style="max-width: 540px;">
+    
     <div class="row g-0">
         <div class="col-md-4">
         <img src="${url}" class="img-fluid rounded-start">
@@ -51,7 +51,6 @@ const createCard = (title, url) => {
             <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
         </div>
         </div>
-    </div>
     </div>
 `
     // var element = `
