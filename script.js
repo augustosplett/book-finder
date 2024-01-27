@@ -36,15 +36,32 @@ const handleInputedString = (inputedString) => {
 const createCard = (title, url) => {
     var result = document.querySelector(".container-result")
     var card = document.createElement('div')
-    card.className = "card"
+    card.className = "card mb-3"
+    card.style = "max-width: 540px;"
     var element = `
-    <div class="book-cover">
-        <img src="${url}" alt="book-cover">
+    <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+        <img src="${url}" class="img-fluid rounded-start">
+        </div>
+        <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title">${title}</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+        </div>
     </div>
-    <div class="book-info">
-      ${title}
-      <input class= "blue-btn" type="button" value="see more">
-    </div>`
+    </div>
+`
+    // var element = `
+    // <div class="book-cover">
+    //     <img src="${url}" alt="book-cover">
+    // </div>
+    // <div class="book-info">
+    //   ${title}
+    //   <input class= "blue-btn" type="button" value="see more">
+    // </div>`
   card.innerHTML = element
   result.appendChild(card)
 }

@@ -31,47 +31,12 @@ nav{
     padding: 1rem;
 }
 container-result{
+    
     width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: inherit;
-    justify-content: inherit;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;  
 }
-.search-input{
-    padding:0.3rem;
-}
 
-.blue-btn{
-    padding:0.3rem;
-    background-color: green;
-    border-radius: 5px;
-    background-color: #365486;
-    color: #DCF2F1;
-}
-
-.card{
-    background-color: gray;
-    width: 20vw;
-    height: 30%;
-    min-height: 30vh;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin:5px;
-    padding: 5px;
-}
-
-.book-info, .book-cover{
-    height: 50%;
-    width: 100%;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.book-cover img{
-    height: 100%;
-    width: 100%;
-}
