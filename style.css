@@ -11,26 +11,15 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100vw;
 }
 
 nav{
     width: 100vw; 
-    display: inherit;
-    align-items: inherit;
-    justify-content: inherit;
-    min-height: 10vh;
-    background-color: #0F1035;
-    color: #DCF2F1;
+    padding: 2vw;
 }
 
-.container{
-    width: 100vw;
-    display: inherit;
-    align-items: inherit;
-    justify-content: inherit;
-    padding: 1rem;
-}
-container-result{
+.container-result{
     
     width: 100vw;
     display: flex;
